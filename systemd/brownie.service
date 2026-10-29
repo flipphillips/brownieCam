@@ -1,0 +1,14 @@
+[Unit]
+Description=BrownieCam Shutter & Capture Daemon
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/brownieCam
+ExecStart=/usr/bin/python3 /home/pi/brownieCam/src/camera_daemon.py
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

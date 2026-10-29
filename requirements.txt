@@ -1,0 +1,8 @@
+# Core dependencies for BrownieCam
+# Note: On Raspberry Pi OS Bookworm/Bullseye, install Picamera2 via apt:
+#   sudo apt install python3-picamera2 python3-libcamera
+# On macOS/dev machine, a mock camera layer is included in camera_daemon.py for testing.
+
+Flask>=3.0.0
+Pillow>=10.0.0
+gpiozero>=2.0
